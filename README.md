@@ -10,6 +10,10 @@ See the [Roadmap](https://github.com/AngelGarcia13/DominicanWhoCodes/blob/master
 
 https://join.slack.com/t/dominicanwhocodes/shared_invite/enQtNzU0MjQ2OTY1MDk1LTcyMTUwODJkNTM2ZTQwYTQ0OWM4ODc4ZTBiOWU1N2Q0ZGY5NmJjZjExZjBjNTE0NGQ2ZjVjZTM2MDBjNmMzNDc
 
+#### Join out WhatsApp Group
+
+https://chat.whatsapp.com/L5rFQpme22IHmmyOMI1MWA
+
 ### Blazor Client App.
 
 🚀 Amazon S3 Bucket: http://www.dominicanwho.codes.s3-website-us-east-1.amazonaws.com/
