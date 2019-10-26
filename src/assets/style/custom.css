@@ -1,0 +1,19 @@
+.headerBadge{
+    adding: .2rem .4rem;
+    padding: 10px;
+    font-size: 87.5%;
+    color: #fff;
+    background-color: #212529;
+    border-radius: .2rem;
+
+}
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+.bg-white {
+    background-color: #fff!important;
+}
+body {
+    background-color: #f5f6fa;
+    color: #343a40;
+}
