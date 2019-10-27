@@ -9,9 +9,14 @@
             <div class="pl-3"><span class="h5 text-sm mb-0">{{ developer.name }}</span></div>
 
         </div>
-        <section class="info-skills">
+        <section class="info-skills" ref="skills">
             <div class="info-space">
                 <span v-for="skill in skillList" :key="skill" class="badge badge-dark badge-pill">{{ skill }}</span>
+                <span v-if="haveMoreSkills" class="badge badge-dark badge-pill"
+                    @click="showAll = !showAll"
+                    :title="showAll ? 'show less' :'show more'"> 
+                    <font-awesome-icon :icon="showAll ? 'times' :'ellipsis-h'" />
+                </span>
             </div>
         </section>
         <div class="description-space">
@@ -35,7 +40,7 @@ const developer = {
     initials: 'JD',
     image: 'https://avatars3.githubusercontent.com/u/499550?s=400&v=4',
     summary: 'This is a test summary',
-    skills: 'Vue, React, Angular',
+    skills: 'Javascript, Vue, React, Angular, Preact, ember.js, golang ',
     webpage: 'test.com',
     linkedIn: 'linkedin.com',
     twitter: 'twitter.com',
@@ -51,10 +56,40 @@ export default {
             }
         }
     },
-    computed: {
-        skillList() {
-            return this.developer.skills.split(',').map(skill => skill.trim());
+    data() {
+        return {
+            skillsHeight: 0,
+            showAll: false
         }
+    },
+
+    mounted() {
+        // we need know if the developer have more than a row of skills to show the toggle
+        this.skillsHeight = this.$refs.skills.clientHeight;
+    },
+    
+    computed: {
+        skills() {
+            return this.developer.skills.split(',').map(skill => skill.trim());
+        },
+
+        skillList() {
+            // we need to show the first two if the developer have more than a row of skills
+            if (!this.showAll && this.skillsHeight > 38) {
+                return this.skills.slice(0, 2);
+            } else {
+                return this.skills;
+            }
+        },
+
+        haveMoreSkills() {
+            if (this.skills.length > this.skillList.length) {
+                return 1
+            } else if (this.showAll) {
+                return 2
+            }
+            return 0
+        },
     }
 }
 </script>
@@ -109,11 +144,13 @@ export default {
 
 .info-skills {
     margin: 0.3rem 0;
-    height: 35px;
+    min-height: 35px;
     overflow: hidden;
+    transition: all ease .3s;
 
     .info-space .badge {
-        margin: 0 2px;
+        margin: 2px 2px;
+        padding: 10px;
     }
 }
 
