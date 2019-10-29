@@ -1,19 +1,46 @@
-.headerBadge{
-    adding: .2rem .4rem;
-    padding: 10px;
-    font-size: 87.5%;
-    color: #fff;
-    background-color: #212529;
-    border-radius: .2rem;
-
+.headerBadge {
+  adding: 0.2rem 0.4rem;
+  padding: 10px;
+  font-size: 87.5%;
+  color: #fff;
+  background-color: #212529;
+  border-radius: 0.2rem;
 }
+/*.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(65, 184, 131, 1)!important;
+}*/
+
 .shadow-sm {
-    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+  background-color: rgba(65, 184, 131, 1) !important;
+}
+.bottom-shadow {
+  box-shadow: 0px 15px 10px -15px rgba(65, 184, 131, 1) !important;
+}
+.top-shadow {
+  box-shadow: 0px -15px 10px -15px rgba(65, 184, 131, 1) !important;
 }
 .bg-white {
-    background-color: #fff!important;
+  background-color: #fff !important;
+}
+.bg-dark {
+  background-color: #000 !important;
 }
 body {
-    background-color: #f5f6fa;
-    color: #343a40;
+  background-color: black;
+  color: white;
+}
+@media screen and (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+    color: black;
+  }
+}
+a{
+    color:#41B883;
+}
+h5{
+    color:#fff;
+}
+p{
+    color:#fff;
 }

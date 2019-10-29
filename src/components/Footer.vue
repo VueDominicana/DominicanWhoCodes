@@ -1,14 +1,14 @@
 <template>
 <b-footer footer class="page-footer font-small blue pt-4" type="light">
-  <div class="container-fluid text-center text-md-left shadow-sm bg-white navbar fixed-bottom">
+  <div class="container-fluid text-center text-md-left shadow-sm top-shadow bg-dark navbar fixed-bottom">
     <div class="row">
       <div class="col-md-6 mt-md-0 mt-3">
-        <h5>DominicanWho.Codes</h5>
+      <b-badge variant="dark"><h5>DominicanWho.Codes</h5></b-badge>
         <p>Open source project inspired in http://indianswhodesign.in, made to expose all the developers from the Dominican Republic with their skills and contacts.</p>
       </div>
       <hr class="clearfix w-100 d-md-none pb-3">
       <div class="col-md-3 mb-md-0 mb-3">
-        <h5>Links</h5>
+        <b-badge variant="dark"><h5>Links</h5></b-badge>
         <ul class="list-unstyled">
           <li>
             <a href="https://github.com/VueDominicana/DominicanWhoCodes">GitHub</a>
