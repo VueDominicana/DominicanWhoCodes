@@ -4,7 +4,8 @@
     <div class="row">
       <div class="col-md-6 mt-md-0 mt-3">
       <b-badge variant="dark"><h5>DominicanWho.Codes</h5></b-badge>
-        <p>Open source project inspired in http://indianswhodesign.in, made to expose all the developers from the Dominican Republic with their skills and contacts.</p>
+        <p>Open source project inspired in <a href="https://indianswhodesign.in">Indians
+Who Design</a>, made to expose all the developers from the Dominican Republic with their skills and contacts.</p>
       </div>
       <hr class="clearfix w-100 d-md-none pb-3">
       <div class="col-md-3 mb-md-0 mb-3">
