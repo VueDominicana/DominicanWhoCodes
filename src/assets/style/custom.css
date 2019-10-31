@@ -6,10 +6,6 @@
   background-color: #212529;
   border-radius: 0.2rem;
 }
-/*.shadow-sm {
-    box-shadow: 0 .125rem .25rem rgba(65, 184, 131, 1)!important;
-}*/
-
 .shadow-sm {
   background-color: rgba(65, 184, 131, 1) !important;
 }
