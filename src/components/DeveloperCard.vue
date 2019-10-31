@@ -30,34 +30,51 @@
         </div>
 
         <div class="developer-card__social-networks">
-            <a v-if="developer.webpage" :href="developer.webpage" target="_blank" class="text-dark"><font-awesome-icon icon="globe-americas" /></a>
-            <a v-if="developer.linkedIn" :href="developer.linkedIn" target="_blank" class="text-dark"><font-awesome-icon :icon="['fab', 'linkedin']" /></a>
-            <a v-if="developer.twitter" :href="developer.twitter" target="_blank" class="text-dark"><font-awesome-icon :icon="['fab', 'twitter']" /></a>
-            <a v-if="developer.github" :href="developer.github" target="_blank" class="text-dark"><font-awesome-icon :icon="['fab', 'github']" /></a>
+            <a
+                v-if="developer.webpage"
+                :href="developer.webpage"
+                :title="developer.webpage | extractUsernameFromUrl"
+                target="_blank"
+                class="text-dark">
+                <font-awesome-icon icon="globe-americas" />
+            </a>
+            <a
+                v-if="developer.linkedIn"
+                :href="developer.linkedIn"
+                :title="developer.linkedIn | extractUsernameFromUrl"
+                target="_blank"
+                class="text-dark">
+                    <font-awesome-icon :icon="['fab', 'linkedin']" />
+            </a>
+            <a
+                v-if="developer.twitter"
+                :href="developer.twitter"
+                :title="developer.twitter | extractUsernameFromUrl"
+                target="_blank"
+                class="text-dark">
+                <font-awesome-icon :icon="['fab', 'twitter']" />
+            </a>
+            <a
+                v-if="developer.github"
+                :href="developer.github"
+                :title="developer.github | extractUsernameFromUrl"
+                target="_blank"
+                class="text-dark">
+                <font-awesome-icon :icon="['fab', 'github']" />
+            </a>
         </div>
     </div>
 </div>
 </template>
 
 <script>
-const developer = {
-    name: 'John Doe',
-    initials: 'JD',
-    image: 'https://avatars3.githubusercontent.com/u/499550?s=400&v=4',
-    summary: 'This is a test summary',
-    skills: 'Javascript, Vue, React, Angular, Preact, ember.js, golang ',
-    webpage: 'test.com',
-    linkedIn: 'linkedin.com',
-    twitter: 'twitter.com',
-    github: 'github.com'
-}
 
 export default {
     props: {
         developer: {
             type: Object,
             default() {
-                return {...developer}
+                return {}
             }
         }
     },
@@ -87,11 +104,11 @@ export default {
 
         haveMoreSkills() {
             if (this.skills.length > this.skillList.length) {
-                return 1
+                return 1;
             } else if (this.showAll) {
-                return 2
+                return 2;
             }
-            return 0
+            return 0;
         },
 
         image() {
@@ -104,16 +121,16 @@ export default {
 
 <style lang="scss" scoped>
 
+
 .developer-card {
     border: 1px #ddd solid; 
     border-radius: 0.5rem;
     box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.03);
     transition: all ease .3s;
     width: 255px;
-    cursor: pointer;
-    max-height: 530px;
     height: 100%;
     overflow: hidden;
+    margin-right: 15px;
 
     &:hover {
         transform: scale(1.02);
@@ -187,8 +204,10 @@ export default {
     &__social-networks {
         font-size: x-large;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 }
-
+.developer-card:last-child {
+    margin-right: 0;
+}
 </style>
