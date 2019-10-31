@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import "./config"
 import "./config/libs/bootstrap";
 import "./config/libs/fa-icons";
 import BootstrapVue from 'bootstrap-vue'
