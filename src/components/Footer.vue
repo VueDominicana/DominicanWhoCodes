@@ -32,6 +32,5 @@ Who Design</a>, made to expose all the developers from the Dominican Republic wi
 <script>
 export default {
   name: 'Footer',
-  }
 }
 </script>
