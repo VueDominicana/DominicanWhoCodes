@@ -46,7 +46,7 @@ export default {
   name: 'Footer',
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 h5 {
     font-weight: 700 !important;
 }
