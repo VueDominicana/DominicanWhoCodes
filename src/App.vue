@@ -1,17 +1,19 @@
 <template>
   <div id="app">
     <Header/>
+    <SubHeading/>
     <router-view/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
 import Header from '@/components/Header.vue'
+import SubHeading from '@/components/SubHeading.vue'
 
 export default {
   components: {
-    Header
+    Header,
+    SubHeading
   }
 }
 </script>
