@@ -3,17 +3,20 @@
     <Header/>
     <SubHeading/>
     <router-view/>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import Header from '@/components/Header.vue'
 import SubHeading from '@/components/SubHeading.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   components: {
     Header,
-    SubHeading
+    SubHeading,
+    Footer
   }
 }
 </script>
