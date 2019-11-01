@@ -48,6 +48,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 h5 {
-    font-weight: 700 !important;
+    font-weight: 700;
 }
 </style>
