@@ -1,5 +1,5 @@
 <template>
-<div class="developer-card card mb-3">
+<div class="developer-card card">
     <div class="developer-card__image-container">
         <img class="developer-card__image-cover" :src="image" alt="developer image">
     </div>
@@ -126,10 +126,9 @@ export default {
     border-radius: 0.5rem;
     box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.03);
     transition: all ease .3s;
-    width: 255px;
+    width: 100%;
     height: auto;
     overflow: hidden;
-    margin-right: 15px;
 
     &:hover {
         transform: scale(1.02);
