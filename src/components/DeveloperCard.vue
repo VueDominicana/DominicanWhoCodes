@@ -121,14 +121,13 @@ export default {
 
 <style lang="scss" scoped>
 
-
 .developer-card {
     border: 1px #ddd solid; 
     border-radius: 0.5rem;
     box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.03);
     transition: all ease .3s;
     width: 255px;
-    height: 100%;
+    height: auto;
     overflow: hidden;
     margin-right: 15px;
 
@@ -210,4 +209,23 @@ export default {
 .developer-card:last-child {
     margin-right: 0;
 }
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .developer-card {
+        &__image-cover {
+            height: 60vw;
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .developer-card {
+        &__image-cover {
+            height: 30vw;
+        }
+    }
+}
+
 </style>
