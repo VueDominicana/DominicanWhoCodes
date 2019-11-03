@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build && cp developers.json dist/",
+    "build": "vue-cli-service build",
     "serve-data": "json-server --read-only --watch developers.json",
     "lint": "vue-cli-service lint"
   },
