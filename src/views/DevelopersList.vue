@@ -44,8 +44,30 @@ export default {
 
 <style lang="scss" scope>
   .developers-container {
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
     justify-content: center;
+    transition: all ease .3s;
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .developers-container {
+      grid-template-columns: repeat(auto-fill, minmax(220px, 220px));
+    }
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    .developers-container {
+      grid-template-columns: repeat(auto-fill, minmax(210px, 210px));
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    .developers-container {
+      grid-template-columns: 0.85fr;
+    }
   }
 </style>
