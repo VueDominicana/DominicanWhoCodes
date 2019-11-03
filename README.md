@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6a98b519-68a7-4056-9af3-1cd521e64fe5/deploy-status)](https://app.netlify.com/sites/dominicanwhocodes/deploys)
+
 # DominicanWhoCodes
 
 Open source project inspired in http://indianswhodesign.in, made to expose all the developers from the Dominican Republic with their skills and contacts.
@@ -5,6 +7,10 @@ Open source project inspired in http://indianswhodesign.in, made to expose all t
 The idea is to have this directoy where you could find the Dominicans devs info, this project is basically for me and @ManuHernandez (and everybody who want to collaborate) to learn/use some of the main JS front-end frameworks (Angular, Vue and React), play with some WebAssembly technologies like Blazor and also implement a Microservices Architecture.
 
 See the [Roadmap](https://github.com/AngelGarcia13/DominicanWhoCodes/blob/master/Roadmap.md) for more technical details.
+
+# Demo
+[DominicanWhoCodes](https://dominicanwhocodes.netlify.com)
+
 
 #### Join our Slack.
 
