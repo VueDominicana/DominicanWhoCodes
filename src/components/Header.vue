@@ -6,6 +6,7 @@
     <b-collapse id="nav-collapse" is-nav>
     <b-navbar-nav class="ml-auto">
      <b-navbar-nav right>
+        <b-nav-item class="text-dark font-weight-bold" href="https://github.com/VueDominicana/DominicanWhoCodes" target="_blank"><b-navbar-brand><b-badge variant="white"><font-awesome-icon :icon="['fab', 'github']"/> About</b-badge></b-navbar-brand></b-nav-item>
         <b-nav-item href="#"><b-navbar-brand href="#"><b-badge variant="dark">Nominate</b-badge></b-navbar-brand></b-nav-item>
       </b-navbar-nav>
     </b-navbar-nav>
