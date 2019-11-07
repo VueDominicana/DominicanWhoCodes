@@ -39,9 +39,9 @@
                 <font-awesome-icon icon="globe-americas" />
             </a>
             <a
-                v-if="developer.linkedIn"
-                :href="developer.linkedIn"
-                :title="developer.linkedIn | extractUsernameFromUrl"
+                v-if="developer.linkedin"
+                :href="developer.linkedin"
+                :title="developer.linkedin | extractUsernameFromUrl"
                 target="_blank"
                 class="text-dark">
                     <font-awesome-icon :icon="['fab', 'linkedin']" />
