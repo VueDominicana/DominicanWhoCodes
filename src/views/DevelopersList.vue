@@ -1,6 +1,9 @@
 <template>
 	<div class="home container">
-		<div class="developers-container">
+		<div v-if="isLoading">
+			<loading-screen></loading-screen>
+		</div>
+		<div v-else class="developers-container">
 			<developer-card v-for="(developer, index) in developers" :developer="developer" :key="index" />
 		</div>
 	</div>
@@ -8,15 +11,18 @@
 
 <script>
 import DeveloperCard from "@/components/DeveloperCard.vue";
+import LoadingScreen from "@/components/LoadingScreen.vue";
 
 export default {
 	name: "DevelopersList",
 	components: {
-		DeveloperCard
+		DeveloperCard,
+		LoadingScreen
 	},
 	data() {
 		return {
-			developers: []
+			developers: [],
+			isLoading: false
 		};
 	},
 	created() {
@@ -24,6 +30,7 @@ export default {
 	},
 	methods: {
 		fetchDevelopers() {
+			this.isLoading = true;
 			axios
 				.get("/developers")
 				.then(({ data: developers }) => {
@@ -31,6 +38,9 @@ export default {
 				})
 				.catch(error => {
 					console.error(error);
+				})
+				.finally(() => {
+					this.isLoading = false;
 				});
 		},
 		sortDevelopers(developers) {
