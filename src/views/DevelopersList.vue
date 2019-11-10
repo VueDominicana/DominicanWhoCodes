@@ -1,6 +1,9 @@
 <template>
   <div class="home container">
-    <div class="developers-container">
+    <div v-if="loading">
+      <loading-animation></loading-animation>
+    </div>
+    <div v-else class="developers-container">
         <developer-card
           v-for="(developer, index) in developers"
           :developer="developer"
@@ -11,15 +14,18 @@
 
 <script>
 import DeveloperCard from '@/components/DeveloperCard.vue'
+import LoadingAnimation from "@/components/LoadingAnimation.vue"
 
 export default {
   name: 'DevelopersList',
   components: {
-    DeveloperCard
+    DeveloperCard,
+    LoadingAnimation
   },
   data() {
     return {
-      developers: []
+      developers: [],
+      loading: false
     }
   },
   created() {
@@ -27,8 +33,10 @@ export default {
   },
   methods: {
     fetchDevelopers() {
+      this.loading = true;
       axios.get("/developers").then(({ data: developers }) => {
         this.sortDevelopers(developers);
+        this.loading = false;
       }).catch(error => {
         console.error(error);
       })
