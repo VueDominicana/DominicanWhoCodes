@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6a98b519-68a7-4056-9af3-1cd521e64fe5/deploy-status)](https://app.netlify.com/sites/dominicanwhocodes/deploys)
+
 # DominicanWhoCodes
 
 Open source project inspired in http://indianswhodesign.in, made to expose all the developers from the Dominican Republic with their skills and contacts.
@@ -6,9 +8,17 @@ The idea is to have this directoy where you could find the Dominicans devs info,
 
 See the [Roadmap](https://github.com/AngelGarcia13/DominicanWhoCodes/blob/master/Roadmap.md) for more technical details.
 
+# Demo
+[DominicanWhoCodes](https://dominicanwhocodes.netlify.com)
+
+
 #### Join our Slack.
 
 https://join.slack.com/t/dominicanwhocodes/shared_invite/enQtNzU0MjQ2OTY1MDk1LTcyMTUwODJkNTM2ZTQwYTQ0OWM4ODc4ZTBiOWU1N2Q0ZGY5NmJjZjExZjBjNTE0NGQ2ZjVjZTM2MDBjNmMzNDc
+
+#### Join out WhatsApp Group
+
+https://chat.whatsapp.com/L5rFQpme22IHmmyOMI1MWA
 
 ### Blazor Client App.
 
@@ -21,6 +31,18 @@ https://join.slack.com/t/dominicanwhocodes/shared_invite/enQtNzU0MjQ2OTY1MDk1LTc
 ```
 npm install
 ```
+
+## Configure the .env file
+
+```
+cp .env.example .env
+```
+
+## Serve a "local API" with the developers data
+```
+npm run serve-data
+```
+Configure the `VUE_APP_API_URL` from `.env` file with the domain of `json-server`, example `VUE_APP_API_URL=http://localhost:3000`
 
 ### Compiles and hot-reloads for development
 
