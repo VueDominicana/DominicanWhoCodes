@@ -6,7 +6,7 @@
 
 <script>
 export default {
-	name: "LoadingAnimation"
+	name: "LoadingScreen"
 };
 </script>
 
