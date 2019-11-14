@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import DeveloperCard from "@/components/DeveloperCard.vue";
-import LoadingScreen from "@/components/LoadingScreen.vue";
+import DeveloperCard from "@/components/DeveloperCard";
+import LoadingScreen from "@/components/LoadingScreen";
 
 export default {
     name: "DevelopersList",

@@ -8,9 +8,9 @@
 </template>
 
 <script>
-import Header from '@/components/Header.vue'
-import SubHeading from '@/components/SubHeading.vue'
-import Footer from '@/components/Footer.vue'
+import Header from '@/components/Header'
+import SubHeading from '@/components/SubHeading'
+import Footer from '@/components/Footer'
 
 export default {
   components: {
