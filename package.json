@@ -5,7 +5,6 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "serve-data": "json-server --read-only --watch developers.json",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -27,11 +26,11 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.11.0",
     "@vue/cli-plugin-eslint": "^3.11.0",
-    "@vue/cli-service": "^3.11.0",
-    "babel-eslint": "^10.0.1",
+    "husky": "^3.0.9",
     "eslint": "^5.16.0",
+    "babel-eslint": "^10.0.1",
+    "@vue/cli-service": "^3.11.0",
     "eslint-plugin-vue": "^5.0.0",
-    "json-server": "^0.15.1",
     "sass": "^1.18.0",
     "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.6.10"

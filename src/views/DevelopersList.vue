@@ -1,7 +1,15 @@
 <template>
-  <div class="home container">
-    <div v-if="isLoading">
-      <loading-screen></loading-screen>
+    <div class="home container">
+        <div v-if="isLoading">
+            <loading-screen></loading-screen>
+        </div>
+        <div v-else class="developers-container">
+            <developer-card
+                v-for="(developer, index) in developers"
+                :developer="developer"
+                :key="index"
+            />
+        </div>
     </div>
     <div
       v-else
@@ -38,8 +46,10 @@ export default {
     methods: {
         fetchDevelopers() {
             this.isLoading = true;
+            const developersURL =
+                "https://raw.githubusercontent.com/AngelGarcia13/DominicanWhoCodes/master/DWC.Blazor/wwwroot/data/developers.json";
             axios
-                .get("/developers")
+                .get(developersURL)
                 .then(({ data: developers }) => {
                     this.sortDevelopers(developers);
                 })
