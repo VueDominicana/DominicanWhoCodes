@@ -25,7 +25,7 @@
 
         <div class="developer-card__description">
             <p class="text-muted text-monospace">
-                <small>{{ developer.summary }}</small>
+                <small class="text-card">{{ developer.summary }}</small>
             </p>
         </div>
 
@@ -207,6 +207,16 @@ export default {
 }
 .developer-card:last-child {
     margin-right: 0;
+}
+
+.text-card {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   line-height: 16px;
+   max-height: 64px;
+   -webkit-line-clamp: 4;
+   -webkit-box-orient: vertical;
 }
 
 // Extra small devices (portrait phones, less than 576px)
