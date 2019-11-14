@@ -62,6 +62,11 @@ npm run build
 npm run lint
 ```
 
+## Update the developers data
+```
+npm run update-data
+```
+
 ### Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
