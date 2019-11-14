@@ -5,8 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
     "serve-data": "json-server --read-only --watch developers.json",
-    "lint": "vue-cli-service lint"
+    "update-data": "node scripts/update-data.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.10.2",
