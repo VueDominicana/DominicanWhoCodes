@@ -8,35 +8,35 @@
 </template>
 
 <script>
-import Header from '@/components/Header.vue'
-import SubHeading from '@/components/SubHeading.vue'
-import Footer from '@/components/Footer.vue'
+import Header from '@/components/Header'
+import SubHeading from '@/components/SubHeading'
+import Footer from '@/components/Footer'
 
 export default {
-  components: {
-    Header,
-    SubHeading,
-    Footer
-  }
+    components: {
+        Header,
+        SubHeading,
+        Footer
+    }
 }
 </script>
 
 <style lang="scss">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
 }
 #nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
+    padding: 30px;
+    a {
+        font-weight: bold;
+        color: #2c3e50;
+        &.router-link-exact-active {
+            color: #42b983;
+        }
     }
-  }
 }
 </style>
