@@ -16,5 +16,5 @@ axios({
         console.log("Developers data updated correctly.");
     }))
 }).catch(error => {
-    console.err(error);
+    console.error(error);
 })
