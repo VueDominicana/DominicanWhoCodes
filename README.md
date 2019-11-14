@@ -32,18 +32,6 @@ https://chat.whatsapp.com/L5rFQpme22IHmmyOMI1MWA
 npm install
 ```
 
-## Configure the .env file
-
-```
-cp .env.example .env
-```
-
-## Serve a "local API" with the developers data
-```
-npm run serve-data
-```
-Configure the `VUE_APP_API_URL` from `.env` file with the domain of `json-server`, example `VUE_APP_API_URL=http://localhost:3000`
-
 ### Compiles and hot-reloads for development
 
 ```
