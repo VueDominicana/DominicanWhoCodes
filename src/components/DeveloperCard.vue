@@ -25,7 +25,7 @@
 
         <div class="developer-card__description">
             <p class="text-muted text-monospace">
-                <small class="text-card">{{ developer.summary }}</small>
+                <small v-bind:title="developer.summary">{{ developer.summary }}</small>
             </p>
         </div>
 
@@ -197,6 +197,16 @@ export default {
         justify-content: center;
         overflow: hidden;
         scrollbar-width: thin;
+
+        small {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            line-height: 16px;
+            max-height: 64px;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+        }
     }
 
     &__social-networks {
@@ -207,16 +217,6 @@ export default {
 }
 .developer-card:last-child {
     margin-right: 0;
-}
-
-.text-card {
-   overflow: hidden;
-   text-overflow: ellipsis;
-   display: -webkit-box;
-   line-height: 16px;
-   max-height: 64px;
-   -webkit-line-clamp: 4;
-   -webkit-box-orient: vertical;
 }
 
 // Extra small devices (portrait phones, less than 576px)
