@@ -25,7 +25,7 @@
 
         <div class="developer-card__description">
             <p class="text-muted text-monospace">
-                <small v-bind:title="developer.summary">{{ developer.summary }}</small>
+                <small :title="developer.summary">{{ developer.summary }}</small>
             </p>
         </div>
 
