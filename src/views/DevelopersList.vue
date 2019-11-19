@@ -11,17 +11,6 @@
             />
         </div>
     </div>
-    <div
-      v-else
-      class="developers-container"
-    >
-      <developer-card
-        v-for="(developer, index) in developers"
-        :developer="developer"
-        :key="index"
-      />
-    </div>
-  </div>
 </template>
 
 <script>
