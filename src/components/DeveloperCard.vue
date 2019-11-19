@@ -146,7 +146,7 @@ export default {
         filter: grayscale(100%);
         transition: all 375ms ease-in-out;
         width: 100%;
-        height: 15vw;
+        height: 18rem;
         object-fit: cover;
         object-position: 0 -10px;
     }
