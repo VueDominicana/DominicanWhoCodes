@@ -146,9 +146,9 @@ export default {
         filter: grayscale(100%);
         transition: all 375ms ease-in-out;
         width: 100%;
-        height: 18rem;
+        height: 20rem;
         object-fit: cover;
-        object-position: 0 -10px;
+        object-position: 0;
     }
 
     &__body {
