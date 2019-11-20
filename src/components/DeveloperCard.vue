@@ -148,7 +148,6 @@ export default {
         width: 100%;
         height: 20rem;
         object-fit: cover;
-        object-position: 0;
     }
 
     &__body {
@@ -223,7 +222,7 @@ export default {
 @media (max-width: 575.98px) { 
     .developer-card {
         &__image-cover {
-            height: 60vw;
+            height: 24rem;
         }
     }
 }
@@ -232,7 +231,7 @@ export default {
 @media (min-width: 768px) and (max-width: 991.98px) {
     .developer-card {
         &__image-cover {
-            height: 30vw;
+            height: 12rem;
         }
     }
 }
