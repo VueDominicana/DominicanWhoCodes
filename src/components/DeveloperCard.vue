@@ -15,7 +15,7 @@
         <section class="developer-card__skills" ref="skills">
             <div class="info-space">
                 <span v-for="skill in skillList" :key="skill" class="badge badge-dark badge-pill">{{ skill }}</span>
-                <span v-if="haveMoreSkills" class="badge badge-dark badge-pill"
+                <span v-if="haveMoreSkills" class="badge badge-dark badge-pill pointer-hand"
                     @click="showAll = !showAll"
                     :title="showAll ? 'show less' :'show more'">
                     <font-awesome-icon :icon="showAll ? 'times' :'ellipsis-h'" />
