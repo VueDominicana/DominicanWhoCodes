@@ -21,4 +21,7 @@ export default {
     img {
         width: 30px;
     }
+    .container{
+        margin-top: 33px;
+    }
 </style>
