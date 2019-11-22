@@ -20,6 +20,7 @@
     "core-js": "^2.6.5",
     "portal-vue": "^2.1.6",
     "vue": "^2.6.10",
+    "vue-lazyload": "^1.3.3",
     "vue-router": "^3.0.3",
     "vuex": "^3.0.1"
   },
