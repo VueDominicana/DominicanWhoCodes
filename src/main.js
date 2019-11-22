@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App'
+import VueLazyLoad from 'vue-lazyload'
 import router from './router'
 import store from './store'
 import "./config"
@@ -11,6 +12,11 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import './assets/style/custom.css';
 
 Vue.use(BootstrapVue)
+Vue.use(VueLazyLoad, {
+  preLoad: 1.3,
+  attempt: 3,
+})
+
 Vue.config.productionTip = false
 
 new Vue({

@@ -1,7 +1,7 @@
 <template>
 <div class="developer-card card">
-    <div class="developer-card__image-container">
-        <img class="developer-card__image-cover" :src="image" alt="developer image">
+    <div class="developer-card__image-container" v-lazy-container="imgLazyLoadingConfig">
+        <img class="developer-card__image-cover" :data-src="image" alt="developer image" />
     </div>
 
     <div class="developer-card__body card-body p-3">
@@ -17,7 +17,7 @@
                 <span v-for="skill in skillList" :key="skill" class="badge badge-dark badge-pill">{{ skill }}</span>
                 <span v-if="haveMoreSkills" class="badge badge-dark badge-pill"
                     @click="showAll = !showAll"
-                    :title="showAll ? 'show less' :'show more'"> 
+                    :title="showAll ? 'show less' :'show more'">
                     <font-awesome-icon :icon="showAll ? 'times' :'ellipsis-h'" />
                 </span>
             </div>
@@ -68,6 +68,7 @@
 </template>
 
 <script>
+import userPlaceholder from '@/assets/images/placeholder-user.png';
 
 export default {
     props: {
@@ -81,7 +82,12 @@ export default {
     data() {
         return {
             skillsHeight: 0,
-            showAll: false
+            showAll: false,
+            imgLazyLoadingConfig: {
+              selector: 'img',
+              error: userPlaceholder,
+              loading: userPlaceholder,
+            },
         }
     },
     mounted() {
@@ -122,7 +128,7 @@ export default {
 <style lang="scss" scoped>
 
 .developer-card {
-    border: 1px #ddd solid; 
+    border: 1px #ddd solid;
     border-radius: 0.5rem;
     box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.03);
     transition: all ease .3s;
@@ -219,7 +225,7 @@ export default {
 }
 
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) { 
+@media (max-width: 575.98px) {
     .developer-card {
         &__image-cover {
             height: 24rem;
