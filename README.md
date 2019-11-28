@@ -10,8 +10,8 @@ The idea is to have this directoy where you could find the Dominicans devs info,
 See the [Roadmap](https://github.com/AngelGarcia13/DominicanWhoCodes/blob/master/Roadmap.md) for more technical details.
 
 # Demo
-[DominicanWhoCodes](https://dominicanwhocodes.netlify.com)
 
+[DominicanWhoCodes](https://dominicanwhocodes.netlify.com)
 
 #### Join our Slack.
 
@@ -44,6 +44,14 @@ npm run serve
 ```
 npm run build
 ```
+
+### Run the unit tests
+
+```
+npm run test
+```
+
+You can find more info about @vue/cli-plugin-unit-mocha [here](https://github.com/vuejs/vue-cli/blob/dev/docs/core-plugins/unit-mocha.md#vuecli-plugin-unit-mocha)
 
 ### Lints and fixes files
 
