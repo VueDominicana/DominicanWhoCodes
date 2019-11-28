@@ -1,11 +1,18 @@
 export function extractUsernameFromUrl(url) {
-    url = url.trim()
-    if (!url) {
-        return;
+    if (typeof url !== "string") {
+        return url;
     }
 
-    const splitedUrl = url.split("/").filter(Boolean);
-    const username = splitedUrl[splitedUrl.length - 1];
+    url = url.trim();
+    if (!url) {
+        return "";
+    }
 
-    return username;
+    url = new URL(url);
+    if (url.pathname === "/") {
+        return url.hostname;
+    }
+
+    const splitedUrl = url.pathname.split("/").filter(Boolean);
+    return splitedUrl[splitedUrl.length - 1];
 }
