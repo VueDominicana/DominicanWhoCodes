@@ -10,6 +10,7 @@ import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import './assets/style/custom.css';
+import "./registerServiceWorker";
 
 Vue.use(BootstrapVue)
 Vue.use(VueLazyLoad, {
@@ -17,7 +18,7 @@ Vue.use(VueLazyLoad, {
   attempt: 3,
 })
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 new Vue({
     router,
