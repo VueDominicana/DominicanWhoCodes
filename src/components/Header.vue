@@ -7,7 +7,7 @@
             class="shadow-sm bg-white"
             fixed="top"
         >
-            <b-navbar-brand href="#">
+            <b-navbar-brand href="/">
                 <b-badge variant="dark">DominicanWho.Codes</b-badge>
             </b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -22,7 +22,7 @@
                             <font-awesome-icon :icon="['fab', 'github']" />About
                         </b-nav-item>
                         <li class="nav-item">
-                            <b-button href="#" variant="dark" class="font-weight-bold">Nominate</b-button>
+                            <b-button href="/nominate" variant="dark" class="font-weight-bold">Nominate</b-button>
                         </li>
                     </b-navbar-nav>
                 </b-navbar-nav>

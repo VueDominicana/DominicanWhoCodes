@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <Header/>
-    <SubHeading/>
+    <SubHeading v-if="!isNominate"/>
     <router-view/>
-    <Footer/>
+    <Footer v-if="!isNominate"/>
   </div>
 </template>
 
@@ -17,6 +17,11 @@ export default {
         Header,
         SubHeading,
         Footer
+    },
+    computed: {
+        isNominate() { 
+            return this.$route.name === 'nominate' ? true : false;
+        }
     }
 }
 </script>
