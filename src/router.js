@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import DevelopersList from './views/DevelopersList'
-import Nominate from './views/Nominate'
+const Nominate = () => import(/* webpackChunkName: "nominate" */ './views/Nominate.vue')
 
 Vue.use(Router)
 
