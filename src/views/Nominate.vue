@@ -10,9 +10,9 @@
                     If you know someone who deserves to be on the list, nominate them by clicking the Nominate button and filling the form.
                     And hey, it's alright to nominate yourself😎
                 </p>
-                <a href="#" rel="noreferrer" class="nominate_button button_primary">Nominate</a>        
+                <a href="#" rel="noreferrer" class="nominate_button btn primary">Nominate</a>
             </div>
-        </div>           
+        </div>
     </div>
 </template>
 
@@ -20,7 +20,7 @@
     .container {
         margin-top: 33px;
     }
-    
+
     .nominate-container {
         display: flex;
         flex: 1 1 auto;
@@ -39,7 +39,7 @@
 
     .body_text {
         font-size: 0.97rem;
-        font-family: Poppins,Source Sans Pro,sans-serif;
+        font-family: Poppins, Source Sans Pro, sans-serif;
         text-align: justify;
         margin: 0;
     }
@@ -47,7 +47,7 @@
     .title_nominate {
         font-size: 3.0rem;
         margin: 5.0rem 0 2.0rem;
-        font-family: Poppins,Source Sans Pro,sans-serif;
+        font-family: Poppins, Source Sans Pro, sans-serif;
         font-weight: bold;
         color: black;
     }
@@ -69,25 +69,22 @@
         margin-top: 50px;
     }
 
-    .button_primary {
-        background: #343a40;
-        outline: none;
-        color: #fff;
-        padding: 10px;
-        border: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        -webkit-transition: var(--transition);
-        transition: var(--transition);
-        box-sizing: border-box;
-        flex: 1 1 auto;
-    }
+    .btn {
+        &.primary {
+            background: #343a40;
+            outline: none;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            justify-content: center;
+            transition: var(--transition);
+            box-sizing: border-box;
+            flex: 1 1 auto;
+        }
 
-    .button_primary:hover {
-        background: black;
+        &.primary:hover {
+            background: black;
+        }
     }
 
     .highlight {
