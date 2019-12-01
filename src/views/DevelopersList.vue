@@ -1,14 +1,17 @@
 <template>
-    <div class="home container">
-        <div v-if="isLoading">
-            <loading-screen></loading-screen>
-        </div>
-        <div v-else class="developers-container">
-            <developer-card
-                v-for="(developer, index) in developers"
-                :developer="developer"
-                :key="index"
-            />
+    <div>
+        <SubHeading/>
+        <div class="home container">
+            <div v-if="isLoading">
+                <loading-screen></loading-screen>
+            </div>
+            <div v-else class="developers-container">
+                <developer-card
+                    v-for="(developer, index) in developers"
+                    :developer="developer"
+                    :key="index"
+                />
+            </div>
         </div>
     </div>
 </template>
@@ -16,12 +19,14 @@
 <script>
 import DeveloperCard from "@/components/DeveloperCard";
 import LoadingScreen from "@/components/LoadingScreen";
+import SubHeading from '@/components/SubHeading';
 
 export default {
     name: "DevelopersList",
     components: {
         DeveloperCard,
-        LoadingScreen
+        LoadingScreen,
+        SubHeading
     },
     data() {
         return {

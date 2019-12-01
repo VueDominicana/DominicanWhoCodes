@@ -1,27 +1,19 @@
 <template>
   <div id="app">
     <Header/>
-    <SubHeading v-if="!isNominate"/>
     <router-view/>
-    <Footer v-if="!isNominate"/>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import Header from '@/components/Header'
-import SubHeading from '@/components/SubHeading'
 import Footer from '@/components/Footer'
 
 export default {
     components: {
         Header,
-        SubHeading,
         Footer
-    },
-    computed: {
-        isNominate() { 
-            return this.$route.name === 'nominate' ? true : false;
-        }
     }
 }
 </script>
