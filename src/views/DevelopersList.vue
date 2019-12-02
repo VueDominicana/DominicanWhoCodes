@@ -48,6 +48,7 @@ export default {
                     this.sortDevelopers(developers);
                 })
                 .catch(error => {
+                    /* eslint-disable no-console */
                     console.error(error);
                 })
                 .finally(() => {
