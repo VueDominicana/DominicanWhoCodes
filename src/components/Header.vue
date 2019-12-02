@@ -7,9 +7,9 @@
             class="shadow-sm bg-white"
             fixed="top"
         >
-            <b-navbar-brand href="#">
+            <router-link to="/" class="navbar-brand">
                 <b-badge variant="dark">DominicanWho.Codes</b-badge>
-            </b-navbar-brand>
+            </router-link>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
                 <b-navbar-nav class="ml-auto">
@@ -19,10 +19,10 @@
                             href="https://github.com/VueDominicana/DominicanWhoCodes"
                             target="_blank"
                         >
-                            <font-awesome-icon :icon="['fab', 'github']" />About
+                            <font-awesome-icon :icon="['fab', 'github']" /> About
                         </b-nav-item>
                         <li class="nav-item">
-                            <b-button href="#" variant="dark" class="font-weight-bold">Nominate</b-button>
+                            <router-link to="nominate" variant="dark" class="btn font-weight-bold btn-dark">Nominate</router-link>
                         </li>
                     </b-navbar-nav>
                 </b-navbar-nav>

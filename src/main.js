@@ -8,7 +8,7 @@ import "./config/libs/bootstrap";
 import "./config/libs/fa-icons";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
-import "./assets/style/custom.css";
+import "./assets/style/custom.scss";
 
 Vue.use(VueLazyLoad, {
     preLoad: 1.3,

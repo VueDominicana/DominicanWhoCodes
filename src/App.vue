@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <Header/>
-    <SubHeading/>
     <router-view/>
     <Footer/>
   </div>
@@ -9,13 +8,11 @@
 
 <script>
 import Header from '@/components/Header'
-import SubHeading from '@/components/SubHeading'
 import Footer from '@/components/Footer'
 
 export default {
     components: {
         Header,
-        SubHeading,
         Footer
     }
 }

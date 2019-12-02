@@ -1,0 +1,32 @@
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
+body {
+    background-color: #f5f6fa;
+    color: #343a40;
+}
+
+.pointer-hand {
+    cursor: pointer;
+}
+
+.btn {
+    &.primary {
+        width: 200px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: #fff;
+        background: #343a40;
+        border-radius: 6px;
+        font-family: "Poppins";
+        font-size: 1.3rem;
+        margin-top: 45px;
+    }
+
+    &.primary:hover {
+        background: black;
+    }
+}
