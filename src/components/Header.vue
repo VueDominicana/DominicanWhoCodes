@@ -19,7 +19,7 @@
                             href="https://github.com/VueDominicana/DominicanWhoCodes"
                             target="_blank"
                         >
-                            <font-awesome-icon :icon="['fab', 'github']" />About
+                            <font-awesome-icon :icon="['fab', 'github']" /> About
                         </b-nav-item>
                         <li class="nav-item">
                             <router-link to="nominate" variant="dark" class="btn font-weight-bold btn-dark">Nominate</router-link>
