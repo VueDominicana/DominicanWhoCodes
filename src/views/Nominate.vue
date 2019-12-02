@@ -1,16 +1,16 @@
 <template>
     <div class="container">
         <div class="nominate-container">
-            <div class="content_wrapper">
-                <h1 class="title_nominate">
+            <div class="content-wrapper">
+                <h1 class="title-nominate">
                     Nominate a <span class="highlight">developer</span>
                 </h1>
-                <p class="body_text">
+                <p class="body-text">
                     Help us build the directory of Developers thriving in the field of programming.
                     If you know someone who deserves to be on the list, nominate them by clicking the Nominate button and filling the form.
                     And hey, it's alright to nominate yourself😎
                 </p>
-                <a href="#" rel="noreferrer" class="nominate_button btn primary">Nominate</a>
+                <a href="#" rel="noreferrer" class="nominate-button btn primary">Nominate</a>
             </div>
         </div>
     </div>
@@ -30,21 +30,21 @@
         padding: 5rem;
     }
 
-    .content_wrapper {
+    .content-wrapper {
         display: flex;
         flex-direction: column;
         max-width: 720px;
         align-items: baseline;
     }
 
-    .body_text {
+    .body-text {
         font-size: 0.97rem;
         font-family: Poppins, Source Sans Pro, sans-serif;
         text-align: justify;
         margin: 0;
     }
 
-    .title_nominate {
+    .title-nominate {
         font-size: 3.0rem;
         margin: 5.0rem 0 2.0rem;
         font-family: Poppins, Source Sans Pro, sans-serif;
@@ -52,7 +52,7 @@
         color: black;
     }
 
-    .nominate_button {
+    .nominate-button {
         text-align: center;
         width: 200px;
         display: inline-block;
