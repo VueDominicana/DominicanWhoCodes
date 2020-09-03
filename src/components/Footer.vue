@@ -6,7 +6,7 @@
                     <h5 class="font-weight-normal">
                         <kbd>DominicanWho.Codes</kbd>
                     </h5>
-                    <small class="d-block mb-3 text-muted">© 2019</small>
+                    <small class="d-block mb-3 text-muted">© {{ new Date().getFullYear() }}</small>
                 </div>
                 <div class="col-6 col-md">
                     <h5>Features</h5>
