@@ -119,7 +119,7 @@ export default {
 
         image() {
             const localImage = "data/devs-pics/";
-            return this.developer.image.replace(localImage,`http://www.dominicanwho.codes/${localImage}`)
+            return this.developer.image.replace(localImage,`http://dominicanwhocodes.azurewebsites.net/${localImage}`)
         }
     }
 }
