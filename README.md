@@ -66,6 +66,5 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### License
-<!--- If you're not sure which open license to use see https://choosealicense.com/--->
 
 This project uses the following license: [MIT](<https://choosealicense.com/licenses/mit/>)
