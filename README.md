@@ -1,6 +1,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/6a98b519-68a7-4056-9af3-1cd521e64fe5/deploy-status)](https://app.netlify.com/sites/dominicanwhocodes/deploys)
 [![Build Status](https://travis-ci.com/VueDominicana/DominicanWhoCodes.svg?branch=master)](https://travis-ci.com/VueDominicana/DominicanWhoCodes)
 [![DeepScan grade](https://deepscan.io/api/teams/6249/projects/8145/branches/92590/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=6249&pid=8145&bid=92590)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/VueDominicana/DominicanWhoCodes/blob/master/LICENSE)
 
 # DominicanWhoCodes
 
@@ -63,3 +64,7 @@ npm run lint
 ### Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### License
+
+This project uses the following license: [MIT](<https://choosealicense.com/licenses/mit/>)
