@@ -2,9 +2,9 @@
     <div>
         <b-navbar
             toggleable="lg"
-            type="light"
+            type="dark"
             variant="info"
-            class="shadow-sm bg-white"
+            class="shadow-sm bg-dark"
             fixed="top"
         >
             <router-link to="/" class="navbar-brand">
@@ -36,3 +36,9 @@ export default {
     name: "Header"
 };
 </script>
+
+<style lang="scss" scoped>
+.bg-dark {
+    background-color: #111 !important;
+}
+</style>
