@@ -8,7 +8,7 @@
                 <p class="nominate__body-text">
                     Help us build the directory of Developers thriving in the field of programming.
                     If you know someone who deserves to be on the list, nominate them by clicking the Nominate button and filling the form.
-                    And hey, it's alright to nominate yourself😎
+                    And hey, it's alright to nominate yourself. 😎
                 </p>
                 <a href="#" rel="noreferrer" class="btn primary">Nominate</a>
             </div>
@@ -41,7 +41,7 @@
             margin: 5.0rem 0 2.0rem;
             font-family: Poppins, Source Sans Pro, sans-serif;
             font-weight: bold;
-            color: black;
+            color: #fff;
         }
 
         &__body-text {
@@ -49,10 +49,11 @@
             font-family: Poppins, Source Sans Pro, sans-serif;
             text-align: justify;
             margin: 0;
+            color: #fff;
         }
 
         &__highlight {
-            color: #343a40;
+            color: #909090;
         }
     }
 </style>

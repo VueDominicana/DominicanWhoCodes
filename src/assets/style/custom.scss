@@ -3,8 +3,8 @@
 }
 
 body {
-    background-color: #f5f6fa;
-    color: #343a40;
+    background-color: #111;
+    color: #222;
 }
 
 .pointer-hand {
@@ -27,6 +27,6 @@ body {
     }
 
     &.primary:hover {
-        background: black;
+        background: #23272b;
     }
 }
