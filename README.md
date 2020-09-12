@@ -30,6 +30,10 @@ See the [Roadmap](https://github.com/AngelGarcia13/DominicanWhoCodes/blob/master
 
 🚀 Azure WebApp (Free Tier, could be stopped anytime): http://dominicanwhocodes.azurewebsites.net/
 
+## How to contribute
+
+> :thought_balloon: If you are new in Open Source world feel free to check our [How to contribute guidelines](https://github.com/VueDominicana/DominicanWhoCodes/blob/master/CONTRIBUTING.md)
+
 ## Project setup
 
 ```
