@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <footer class="pt-4 my-md-5 pt-md-5 border-top mt-4">
             <div class="row">
                 <div class="col-12 col-md">
                     <h5 class="font-weight-normal">
@@ -77,7 +77,6 @@ export default {
 <style lang="scss" scoped>
 .container {
     text-align: left;
-
     h5 {
         font-weight: 700;
         color: #909090;
