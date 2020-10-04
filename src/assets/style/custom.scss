@@ -30,3 +30,27 @@ body {
         background: #23272b;
     }
 }
+
+.btn {
+    &.secundary {
+        width: 200px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: #fff;
+        background: #1ac790;
+        border-radius: 6px;
+        font-family: "Poppins";
+        font-size: 1.3rem;
+    }
+
+    &.secundary:hover {
+        background: #23272b;
+    }
+
+    &.block {
+        width: 100%;
+        height: 50px;
+    }
+}
