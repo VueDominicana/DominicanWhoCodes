@@ -12,10 +12,9 @@
           And hey, it's alright to nominate yourself. 😎
         </p>
 
-        <a href="#nominate" rel="noreferrer" class="btn primary" @click="onNominar">
-        Nominate</a>
+        <button class="btn primary" @click="isOpen =! isOpen">Nominate</button>
 
-        <template v-if="openNominar">
+        <template v-if="isOpen">
             <NominateForm />
         </template>
 
@@ -34,21 +33,17 @@ export default {
   },
   data() {
     return {
-      openNominar: false,
+      isOpen: false,
 
     };
   },
-  methods: {
-    onNominar() {
-      this.openNominar = !this.openNominar;
-    }
-  },
 };
-</script>>
+</script>
 <style lang="scss" scoped>
 .nominate {
   margin-top: 33px;
-
+    font-family: Poppins, Source Sans Pro, sans-serif;
+    
   &__section {
     display: flex;
     flex: 1 1 auto;
@@ -68,14 +63,12 @@ export default {
   &__title {
     font-size: 3rem;
     margin: 5rem 0 2rem;
-    font-family: Poppins, Source Sans Pro, sans-serif;
     font-weight: bold;
     color: #fff;
   }
 
   &__body-text {
     font-size: 0.97rem;
-    font-family: Poppins, Source Sans Pro, sans-serif;
     text-align: justify;
     margin: 0;
     color: #fff;

@@ -18,6 +18,8 @@ body {
         display: flex;
         justify-content: center;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         color: #fff;
         background: #343a40;
         border-radius: 6px;
@@ -29,19 +31,20 @@ body {
     &.primary:hover {
         background: #23272b;
     }
-}
 
-.btn {
+    
     &.secundary {
         width: 200px;
         height: 50px;
         display: flex;
         justify-content: center;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         color: #fff;
         background: #1ac790;
         border-radius: 6px;
-        font-family: "Poppins";
+        font-family: Poppins,  Source  Sans Pro, sans-serif;
         font-size: 1.3rem;
     }
 

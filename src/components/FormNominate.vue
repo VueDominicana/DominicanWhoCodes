@@ -7,16 +7,17 @@
           type="text"
           class="form-control"
           placeholder="@example02"
-          v-model="form.nameUser"
+          v-model.trim="form.nameUser"
         />
       </div>
       <div class="col-lg-6 col-md-12 my-2">
         <label class="text-white">Url of your Github profile *</label>
         <input
-          type="text"
+          type="url"
           class="form-control"
+          required
           placeholder="https://github.com/example02"
-          v-model="form.urlGithub"
+          v-model.trim="form.urlGithub"
         />
       </div>
     </div>
@@ -24,19 +25,21 @@
       <div class="col-lg-6 col-md-12 my-2">
         <label class="text-white">Url of your Twitter profile</label>
         <input
-          type="text"
+          type="url"
           class="form-control"
+          required
           placeholder="https://twitter.com/example02"
-          v-model="form.urlTwitter"
+          v-model.trim="form.urlTwitter"
         />
       </div>
       <div class="col-lg-6 col-md-12 my-2">
         <label class="text-white">Url of your Linkedin profile </label>
         <input
-          type="text"
+          type="url"
           class="form-control"
+          required
           placeholder="https://www.linkedin.com/in/emxaple02"
-          v-model="form.urlLinkedin"
+          v-model.trim="form.urlLinkedIn"
         />
       </div>
     </div>
@@ -45,20 +48,18 @@
         <label class="text-white">Make a brief description</label>
       </div>
       <div class="col-12">
-        <textarea class="form-control" v-model="form.descripcion"></textarea>
+        <textarea class="form-control" required v-model.trim="form.descripcion"></textarea>
       </div>
-      <div class="col-12 text-center mt-3" v-if="errorForm === true">
-        <small class="d-block text-danger"> Fill in all the fields * </small>
+      <div class="col-12 text-center mt-3" v-if="hasFormErrors">
+        <small class="d-block text-danger">Fill in all the fields *</small>
       </div>
       <div class="col-12 mt-3">
-        <a
-          href="#nominate"
-          rel="noreferrer"
+        <button
           class="btn secundary block"
           @click="sendNominate"
         >
           Send
-        </a>
+        </button>
       </div>
     </div>
   </div>
@@ -72,39 +73,29 @@ export default {
         nameUser: "",
         urlGithub: "",
         urlTwitter: "",
-        urlLinkedin: "",
+        urlLinkedIn: "",
         descripcion: "",
       },
-      errorForm: false,
+      hasFormErrors: false,
     };
   },
   methods: {
     sendNominate() {
-      if (
-        this.form.nameUser === "" ||
-        this.form.urlGithub === "" ||
-        this.form.urlTwitter === "" ||
-        this.form.urlLinkedin === "" ||
-        this.form.descripcion === ""
-      ) {
-        this.errorForm = true;
-        return;
-      }
-      this.errorForm = false;
+        this.hasFormErrors = Object.values(this.form).some(formValue => !formValue.trim())
     },
   },
 };
 </script>
-<style>
+<style scoped lang="scss" >
 .campos {
   width: 100%;
   transition: ease-in-out 0.9s;
   font-family: Poppins, Source Sans Pro, sans-serif;
   font-weight: bold;
+
+  input, textarea {
+    font-weight: normal;
+    font-size: 14px;
+  }
 }
-.campos input,
-textarea {
-  font-weight: normal;
-  font-size: 14px;
-}
-</style>>
+</style>
