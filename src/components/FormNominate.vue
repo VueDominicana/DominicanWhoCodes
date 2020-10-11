@@ -33,7 +33,7 @@
         />
       </div>
       <div class="col-lg-6 col-md-12 my-2">
-        <label class="text-white">Url of your Linkedin profile </label>
+        <label class="text-white">Url of your Linkedin profile</label>
         <input
           type="url"
           class="form-control"
@@ -81,7 +81,7 @@ export default {
   },
   methods: {
     sendNominate() {
-        this.hasFormErrors = Object.values(this.form).some(formValue => !formValue.trim())
+        this.hasFormErrors = Object.values(this.form).some(formValue => !formValue.trim());
     },
   },
 };
