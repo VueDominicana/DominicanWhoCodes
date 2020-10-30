@@ -12,7 +12,7 @@
           And hey, it's alright to nominate yourself. 😎
         </p>
 
-        <button class="btn primary" @click="isOpen =! isOpen">Nominate</button>
+        <button class="btn primary" @click="isOpen != isOpen">Nominate</button>
 
         <template v-if="isOpen">
             <NominateForm />
