@@ -12,11 +12,9 @@
           And hey, it's alright to nominate yourself. 😎
         </p>
 
-        <button class="btn primary" @click="isOpen =! isOpen">Nominate</button>
+        <button class="btn primary">Nominate</button>
 
-        <template v-if="isOpen">
-            <NominateForm />
-        </template>
+        <NominateForm />
 
       </div>
     </div>
@@ -31,12 +29,7 @@ export default {
   components: {
       NominateForm
   },
-  data() {
-    return {
-      isOpen: false,
 
-    };
-  },
 };
 </script>
 <style lang="scss" scoped>

@@ -1,5 +1,5 @@
 <template>
-  <div class="campos mt-3 pt-4 w-100 text-left" id="nominate">
+  <div class="fields mt-3 pt-4 w-100 text-left" id="nominate">
     <div class="row flex-wrap">
       <div class="col-lg-6 col-md-12 my-2">
         <label class="text-white">User Name *</label>
@@ -87,7 +87,7 @@ export default {
 };
 </script>
 <style scoped lang="scss" >
-.campos {
+.fields {
   width: 100%;
   transition: ease-in-out 0.9s;
   font-family: Poppins, Source Sans Pro, sans-serif;
