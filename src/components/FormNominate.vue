@@ -5,6 +5,7 @@
         <label class="text-white">User Name *</label>
         <input
           type="text"
+          required
           class="form-control"
           placeholder="@example02"
           v-model.trim="form.nameUser"
