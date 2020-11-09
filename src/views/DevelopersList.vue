@@ -32,12 +32,16 @@ export default {
     created() {
         this.fetchAllDevelopers();
     },
-    computed: mapGetters({
-        allDevelopers: "developers/getAllDevelopers",
-    }),
-    methods: mapActions({
-        fetchAllDevelopers: "developers/fetchAllDevelopers",
-    }),
+    computed: {
+    	...mapGetters({
+	        allDevelopers: "developers/getAllDevelopers",
+	    })
+    },
+    methods: {
+    	...mapActions({
+	        fetchAllDevelopers: "developers/fetchAllDevelopers",
+	    })
+    },
 };
 </script>
 
