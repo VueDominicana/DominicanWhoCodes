@@ -33,14 +33,14 @@ export default {
         this.fetchAllDevelopers();
     },
     computed: {
-    	...mapGetters({
-	        allDevelopers: "developers/getAllDevelopers",
-	    })
+        ...mapGetters({
+            allDevelopers: "developers/getAllDevelopers",
+        })
     },
     methods: {
-    	...mapActions({
-	        fetchAllDevelopers: "developers/fetchAllDevelopers",
-	    })
+        ...mapActions({
+            fetchAllDevelopers: "developers/fetchAllDevelopers",
+        })
     },
 };
 </script>
