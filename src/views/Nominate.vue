@@ -12,8 +12,6 @@
           And hey, it's alright to nominate yourself. 😎
         </p>
 
-        <button class="btn primary">Nominate</button>
-
         <NominateForm />
 
       </div>
