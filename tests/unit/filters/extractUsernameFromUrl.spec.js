@@ -58,7 +58,7 @@ describe("extractUsernameFromUrl", () => {
         expect(actual).to.be.equal(expected);
     });
 
-    it("returns the username wihtout trailing slashes", () => {
+    it("returns the username without trailing slashes", () => {
         const actual = extractUsernameFromUrl("https://twitter.com/johndoe/");
         const expected = "johndoe";
         expect(actual).to.be.equal(expected);

@@ -74,9 +74,7 @@ export default {
     props: {
         developer: {
             type: Object,
-            default() {
-                return {}
-            }
+            required: true,
         }
     },
     data() {

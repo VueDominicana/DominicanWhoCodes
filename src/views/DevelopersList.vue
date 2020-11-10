@@ -1,22 +1,23 @@
 <template>
     <div>
         <SubHeading/>
-        <div class="home container">
-            <div v-if="isLoading">
-                <loading-screen></loading-screen>
+        <section class="home container">
+            <div v-if="!allDevelopers.length">
+                <loading-screen />
             </div>
             <div v-else class="developers-container">
                 <developer-card
-                    v-for="(developer, index) in developers"
+                    v-for="(developer, index) in allDevelopers"
                     :developer="developer"
                     :key="index"
                 />
             </div>
-        </div>
+        </section>
     </div>
 </template>
 
 <script>
+import { mapActions, mapGetters } from "vuex";
 import DeveloperCard from "@/components/DeveloperCard";
 import LoadingScreen from "@/components/LoadingScreen";
 import SubHeading from '@/components/SubHeading';
@@ -28,41 +29,19 @@ export default {
         LoadingScreen,
         SubHeading
     },
-    data() {
-        return {
-            developers: [],
-            isLoading: false
-        };
-    },
     created() {
-        this.fetchDevelopers();
+        this.fetchAllDevelopers();
+    },
+    computed: {
+        ...mapGetters({
+            allDevelopers: "developers/getAllDevelopers",
+        })
     },
     methods: {
-        fetchDevelopers() {
-            this.isLoading = true;
-            const developersURL =
-                "https://raw.githubusercontent.com/AngelGarcia13/DominicanWhoCodes/master/DWC.Blazor/wwwroot/data/developers.json";
-            axios
-                .get(developersURL)
-                .then(({ data: developers }) => {
-                    this.sortDevelopers(developers);
-                })
-                .catch(error => {
-                    /* eslint-disable no-console */
-                    console.error(error);
-                })
-                .finally(() => {
-                    this.isLoading = false;
-                });
-        },
-        sortDevelopers(developers) {
-            const sortedDevelopers = developers.sort((a, b) =>
-                a.name.localeCompare(b.name, "es", { ignorePunctuation: true })
-            );
-
-            this.developers = sortedDevelopers;
-        }
-    }
+        ...mapActions({
+            fetchAllDevelopers: "developers/fetchAllDevelopers",
+        })
+    },
 };
 </script>
 
