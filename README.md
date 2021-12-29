@@ -20,10 +20,6 @@ See the [Roadmap](https://github.com/AngelGarcia13/DominicanWhoCodes/blob/master
 
 [![Slack](https://img.shields.io/badge/slack-%234A154B.svg?&style=for-the-badge&logo=slack&logoColor=white)](https://join.slack.com/t/dominicanwhocodes/shared_invite/enQtNzU0MjQ2OTY1MDk1LTcyMTUwODJkNTM2ZTQwYTQ0OWM4ODc4ZTBiOWU1N2Q0ZGY5NmJjZjExZjBjNTE0NGQ2ZjVjZTM2MDBjNmMzNDc)
 
-#### Join our WhatsApp Group
-
-[![WhatsApp](https://img.shields.io/badge/WHATSAPP-%2325D366.svg?&style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/L5rFQpme22IHmmyOMI1MWA)
-
 ### Blazor Client App.
 
 🚀 Amazon S3 Bucket: http://www.dominicanwho.codes.s3-website-us-east-1.amazonaws.com/
