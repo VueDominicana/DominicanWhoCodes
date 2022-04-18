@@ -19,7 +19,7 @@
         "boostrap": "^2.0.0",
         "bootstrap": "^4.5.2",
         "bootstrap-vue": "^2.16.0",
-        "core-js": "^3.6.5",
+        "core-js": "^3.22.0",
         "portal-vue": "^2.1.7",
         "to-fast-properties": "^4.0.0",
         "vue": "^2.6.14",
