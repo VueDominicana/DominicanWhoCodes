@@ -10,7 +10,7 @@ module.exports = {
         "no-undef": "off"
     },
     parserOptions: {
-        parser: "babel-eslint"
+        parser: "@babel/eslint-parser"
     },
     overrides: [
         {
