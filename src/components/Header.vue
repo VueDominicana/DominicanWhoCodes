@@ -33,7 +33,8 @@
 
 <script>
 export default {
-    name: "HeaderItem"
+    // eslint-disable-next-line vue/multi-word-component-names, vue/no-reserved-component-names
+    name: "Header"
 };
 </script>
 

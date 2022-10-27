@@ -72,7 +72,8 @@
 
 <script>
 export default {
-    name: "FooterItem"
+    // eslint-disable-next-line vue/multi-word-component-names, vue/no-reserved-component-names
+    name: "Footer"
 };
 </script>
 <style lang="scss" scoped>

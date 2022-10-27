@@ -1,19 +1,21 @@
 <template>
   <div id="app">
-    <HeaderItem />
+    <Header />
     <router-view />
-    <FooterItem v-show="$route.path==='/nominate' ? false : true" />
+    <Footer v-show="$route.path==='/nominate' ? false : true" />
   </div>
 </template>
 
 <script>
-import HeaderItem from "@/components/HeaderItem";
-import FooterItem from "@/components/FooterItem";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default {
   components: {
-    HeaderItem,
-    FooterItem,
+    // eslint-disable-next-line vue/no-reserved-component-names
+    Header,
+    // eslint-disable-next-line vue/no-reserved-component-names
+    Footer,
   },
 };
 </script>
