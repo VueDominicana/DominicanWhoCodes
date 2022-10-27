@@ -1,19 +1,19 @@
 <template>
   <div id="app">
-    <Header />
+    <HeaderItem />
     <router-view />
-    <Footer v-show="$route.path==='/nominate' ? false : true" />
+    <FooterItem v-show="$route.path==='/nominate' ? false : true" />
   </div>
 </template>
 
 <script>
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import HeaderItem from "@/components/HeaderItem";
+import FooterItem from "@/components/FooterItem";
 
 export default {
   components: {
-    Header,
-    Footer,
+    HeaderItem,
+    FooterItem,
   },
 };
 </script>
