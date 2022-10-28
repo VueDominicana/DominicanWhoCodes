@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
     <div class="nominate">
         <div class="nominate__section">
