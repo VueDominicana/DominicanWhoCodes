@@ -3,7 +3,6 @@ node_modules
 /dist
 
 # local env files
-.env
 .env.*.local
 
 # Log files
@@ -19,3 +18,4 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+config.bat
